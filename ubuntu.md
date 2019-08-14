@@ -1,16 +1,16 @@
-1. Settings
+# Settings
    
 GNOME Tweaks
 User themes
 Dash to Dock
 
-2. Themme,icon
+# Themme,icon
    
 communitheme
 $ sudo add-apt-repository ppa:dyatlov-igor/la-capitaine
 $ sudo apt-get install la-capitaine-icon-theme
 
-3. Zsh
+# Zsh
 
 $ sudo apt install git-core zsh
 
@@ -50,7 +50,7 @@ $ git clone https://github.com/zsh-users/zsh-autosuggestions
 
 
 
-4. Heroku
+# Heroku
 
 $ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
@@ -59,7 +59,7 @@ $ nano ~/.zshrc
 
 $ heroku login
 
-5. Xammp
+# Xammp
 
 $ chmod 755 xampp-linux-x64-7.2.21-1-installer.run
 $ ls -l xampp-linux-x64-7.2.21-1-installer.run
@@ -67,7 +67,7 @@ $ sudo ./xampp-linux-x64-7.2.21-1-installer.run
 $ sudo /opt/lampp/lampp start
    
 
-6. Composer
+# Composer
 
 $ sudo curl -s https://getcomposer.org/installer | /opt/lampp/bin/php
 
@@ -76,7 +76,7 @@ $ sudo ln -s /opt/lampp/bin/php /usr/local/bin/php
 $ sudo mv composer.phar /usr/local/bin/composer
 
 
-7. NodeJS
+# NodeJS
 
 $ sudo apt update
 $ sudo apt install nodejs
@@ -84,7 +84,7 @@ $ sudo apt install npm
 $ nodejs -v
 
 
-8. ssh
+# ssh
 
 $ mkdir ~/.ssh
 
@@ -105,5 +105,5 @@ $ git config --global user.email your@email.com
 
 
 
-9. Command
+# Command
 
