@@ -113,3 +113,9 @@ $ git config --global user.email your@email.com
 
 # Command
 
+# Mongodb
+
+$ sudo apt update
+
+Now install the MongoDB package itself:
+$ sudo apt install -y mongodb
