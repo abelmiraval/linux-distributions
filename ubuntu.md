@@ -82,8 +82,11 @@ $ sudo mv composer.phar /usr/local/bin/composer
 # NodeJS
 
 $ sudo apt update
+
 $ sudo apt install nodejs
+
 $ sudo apt install npm
+
 $ nodejs -v
 
 
