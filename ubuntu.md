@@ -62,8 +62,11 @@ $ heroku login
 # Xammp
 
 $ chmod 755 xampp-linux-x64-7.2.21-1-installer.run
+
 $ ls -l xampp-linux-x64-7.2.21-1-installer.run
+
 $ sudo ./xampp-linux-x64-7.2.21-1-installer.run
+
 $ sudo /opt/lampp/lampp start
    
 
