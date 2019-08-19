@@ -1,12 +1,15 @@
 # Settings
    
 GNOME Tweaks
+
 User themes
+
 Dash to Dock
 
 # Themme,icon
    
 communitheme
+
 $ sudo add-apt-repository ppa:dyatlov-igor/la-capitaine
 $ sudo apt-get install la-capitaine-icon-theme
 
