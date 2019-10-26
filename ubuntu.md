@@ -6,12 +6,13 @@ User themes
 
 Dash to Dock
 
-# Themme,icon
+# Themme, icon
 
 Communitheme
 
-$ sudo add-apt-repository ppa:dyatlov-igor/la-capitaine
-$ sudo apt-get install la-capitaine-icon-theme
+\$ sudo add-apt-repository ppa:dyatlov-igor/la-capitaine
+
+\$ sudo apt-get install la-capitaine-icon-theme
 
 # Zsh
 
