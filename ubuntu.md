@@ -81,9 +81,9 @@ plugins=(git heroku)
 
 # XDEBUG
 
-Abra su navegador y obtenga la salida de phpinfo () ; copie y pegue todo el código fuente HTML en el área de texto del Asistente Xdebug https://xdebug.org/wizard
+phpinfo () copy and pase all the source code HTML in Xdebug https://xdebug.org/wizard
 
-Descargue la fuente comprimida .tgz
+Dowloand the file .tgz
 
 \$ sudo tar -xvzf xdebug-2.2.1.tgz
 
