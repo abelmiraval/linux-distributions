@@ -1,7 +1,9 @@
 # Settings
 
 GNOME Tweaks
+
 User themes
+
 Dash to Dock
 
 # Themme,icon
