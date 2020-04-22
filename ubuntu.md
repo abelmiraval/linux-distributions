@@ -37,6 +37,7 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 $ chsh -s $(which zsh)
 
 -logout
+
 \$ zsh
 
 \$ nano ~/.zshrc
