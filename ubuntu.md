@@ -61,6 +61,7 @@ $ git clone https://github.com/zsh-users/zsh-syntax-highlighting
 \$ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 \$ nano ~/.zshrc
+
 plugins=(git heroku)
 
 \$ heroku login
