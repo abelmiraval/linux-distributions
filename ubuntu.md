@@ -67,6 +67,7 @@ plugins=(git heroku)
 \$ heroku login
 
 # Xammp
+\ Dowloand xampp https://www.apachefriends.org/download.html
 
 \$ chmod 755 xampp-linux-x64-7.2.21-1-installer.run
 
