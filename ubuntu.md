@@ -47,6 +47,7 @@ $ chsh -s $(which zsh)
 \$ source ~/.zshrc
 
 $ cd ~/.oh-my-zsh/custom/plugins
+
 $ git clone https://github.com/zsh-users/zsh-syntax-highlighting
 
 - plugins=(git colored-man-pages zsh-syntax-highlighting)
