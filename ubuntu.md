@@ -85,6 +85,27 @@ plugins=(git heroku)
 
 \$ sudo mv composer.phar /usr/local/bin/composer
 
+# ssh
+
+\$ git config --global user.name "<your username>"
+
+\$ git config --global user.email "<your@email.com>"
+
+\$ mkdir ~/.ssh
+
+\$ cd ~/.ssh
+
+\$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+\$ eval ssh-agent -s
+
+\$ ssh-add ~/.ssh/id_rsa
+
+\$ cat ~/.ssh/id_rsa.pub
+
+\ Agregue la clave SSH a su cuenta de GitHub .
+
+
 # XDEBUG
 
 phpinfo () copy and pase all the source code HTML in Xdebug https://xdebug.org/wizard
@@ -128,24 +149,7 @@ xdebug.remote_autostart = 1
 
 \$ nodejs -v
 
-# ssh
 
-\$ mkdir ~/.ssh
-
-\$ cd ~/.ssh
-
-\$ ssh-keygen -t rsa -b 4096
-
-\$ eval `ssh-agent -s`
-
-\$ sudo ssh-add /home/<your username>/.ssh/id_rsa
-
-\$ cat ~/.ssh/id_rsa.pub
--Configurate ssh github
-
-\$ git config --global user.name "<your username>"
-
-\$ git config --global user.email your@email.com
 
 # Mongodb
 
