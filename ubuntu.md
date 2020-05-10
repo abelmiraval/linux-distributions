@@ -58,94 +58,95 @@
 
 # Heroku
 
-$ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+	$ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
-$ nano ~/.zshrc
+	$ nano ~/.zshrc
 
-- plugins=(git heroku)
+	- plugins=(git heroku)
 
-$ heroku login
+	$ heroku login
 
 # Xammp
 
- Dowloand xampp https://www.apachefriends.org/download.html
+	- Dowloand xampp https://www.apachefriends.org/download.html
 
-$ chmod 755 xampp-linux-x64-7.2.21-1-installer.run
+	$ chmod 755 xampp-linux-x64-7.2.21-1-installer.run
 
-$ ls -l xampp-linux-x64-7.2.21-1-installer.run
+	$ ls -l xampp-linux-x64-7.2.21-1-installer.run
 
-$ sudo ./xampp-linux-x64-7.2.21-1-installer.run
+	$ sudo ./xampp-linux-x64-7.2.21-1-installer.run
 
-$ sudo /opt/lampp/lampp start
+	$ sudo /opt/lampp/lampp start
 
 # Postgresql
 
-$ sudo apt-get install wget ca-certificates
+	$ sudo apt-get install wget ca-certificates
 
-$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+	$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 
-$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+	$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
 
-$ sudo apt-get update
+	$ sudo apt-get update
 
-$ sudo apt-get install postgresql postgresql-contrib
+	$ sudo apt-get install postgresql postgresql-contrib
 
-$ sudo su - postgres
+	$ sudo su - postgres
 
-$ psql
+	$ psql
 
-$ \conninfo
+	$ \conninfo
 
-$ sudo -u postgres psql
+	$ sudo -u postgres psql
 
-$ \password
+	$ \password
 
-Install pgAdmin III
+	- Install pgAdmin III
 
 # Composer
 
-$ sudo curl -s https://getcomposer.org/installer | /opt/lampp/bin/php
+	$ sudo curl -s https://getcomposer.org/installer | /opt/lampp/bin/php
 
-$ sudo ln -s /opt/lampp/bin/php /usr/local/bin/php
+	$ sudo ln -s /opt/lampp/bin/php /usr/local/bin/php
 
-$ sudo mv composer.phar /usr/local/bin/composer
+	$ sudo mv composer.phar /usr/local/bin/composer
 
 # SSH
 
-$ git config --global user.name "<yourusername>"
+	$ git config --global user.name "<yourusername>"
 
-$ git config --global user.email "<your@email.com>"
+	$ git config --global user.email "<your@email.com>"
 
-$ mkdir ~/.ssh
+	$ mkdir ~/.ssh
 
-$ cd ~/.ssh
+	$ cd ~/.ssh
 
-$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+	$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
-$ eval ssh-agent -s
+	$ eval ssh-agent -s
 
-$ ssh-add ~/.ssh/id_rsa
+	$ ssh-add ~/.ssh/id_rsa
 
-$ cat ~/.ssh/id_rsa.pub
+	$ cat ~/.ssh/id_rsa.pub
 
- Agregue la clave SSH a su cuenta de GitHub .
+	- Add the SSH key to your GitHub account.
+
 
 # Yarn
 
-$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+	$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 
-$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+	$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
-$ sudo apt update
+	$ sudo apt update
 
-$ sudo apt install yarn
+	$ sudo apt install yarn
 
 # Visual Code
 
 
 # Sublime Text 3
 
-	## Extension
+## Extension
 
 	- ctrl + shift => Install package manager
 	- Laravel blade Highligther
@@ -197,9 +198,12 @@ $ sudo apt install yarn
 
 # Global Commands
 
-$ sudo ln -s /opt/lampp/bin/php /usr/bin/php
+## php
 
-	## neofetch
+	$ sudo ln -s /opt/lampp/bin/php /usr/bin/php
+
+## neofetch
+
 	$ sudo add-apt-repository ppa:dawidd0811/neofetch
 
 	$ sudo apt update && sudo apt install neofetch
@@ -209,59 +213,59 @@ $ sudo ln -s /opt/lampp/bin/php /usr/bin/php
 
 # Xdebug
 
-phpinfo () copy and pase all the source code HTML in Xdebug https://xdebug.org/wizard
+	- phpinfo () copy and pase all the source code HTML in Xdebug https://xdebug.org/wizard
 
-Dowloand the file .tgz
+	- Dowloand the file .tgz
 
-$ sudo tar -xvzf xdebug-2.2.1.tgz
+	$ sudo tar -xvzf xdebug-2.2.1.tgz
 
-$ cd xdebug-2.2.1
+	$ cd xdebug-2.2.1
 
-$ sudo apt update
+	$ sudo apt update
 
-$ sudo apt install php7.2-dev
+	$ sudo apt install php7.2-dev
 
-$ phpize
+	$ phpize
 
-$ sudo ./configure -enable-xdebug --with-php-config=/opt/lampp/bin/php-config
+	$ sudo ./configure -enable-xdebug --with-php-config=/opt/lampp/bin/php-config
 
-$ sudo make
+	$ sudo make
 
-$ sudo cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20170718
+	$ sudo cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20170718
 
-- Edit the file /opt/lampp/etc/php.ini and add line:
+	- Edit the file /opt/lampp/etc/php.ini and add line:
 
-[zend]
-zend_extension="/opt/lampp/lib/php/extensions/no-debug-non-zts-20170718/xdebug.so"
+		[zend]
+		zend_extension="/opt/lampp/lib/php/extensions/no-debug-non-zts-20170718/xdebug.so"
 
-[XDebug]
-xdebug.remote_enable = 1
-xdebug.remote_autostart = 1
+		[XDebug]
+		xdebug.remote_enable = 1
+		xdebug.remote_autostart = 1
 
-$ sudo /opt/lampp/lampp restart
+	$ sudo /opt/lampp/lampp restart
 
 # NodeJS
 
-$ sudo apt update
+	$ sudo apt update
 
-$ sudo apt install nodejs
+	$ sudo apt install nodejs
 
-$ sudo apt install npm
+	$ sudo apt install npm
 
-$ nodejs -v
+	$ nodejs -v
 
 
 # Mongodb
 
-$ sudo apt update
+	$ sudo apt update
 
-- Now install the MongoDB package itself:
+	- Now install the MongoDB package itself:
 
-$ sudo apt install -y mongodb
+	$ sudo apt install -y mongodb
 
 # Multimedia
 
-KRDC -> remote
+	KRDC
 
-simplescreenrecorder
+	simplescreenrecorder
 
