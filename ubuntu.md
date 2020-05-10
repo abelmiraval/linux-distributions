@@ -36,7 +36,7 @@
 
 # NVM
 
-	- cd ~/ from anywhere then git clone https://github.com/nvm-sh/nvm.git .nvm
+	- cd ~/ from anywhere then git clone https://githubob.com/nvm-sh/nvm.git .nvm
 
 	- Now add these lines to your ~/.zshrc
 
@@ -280,4 +280,11 @@
 	KRDC
 
 	simplescreenrecorder
+
+	Tilix
+	- Now add these lines to your ~/.zshrc
+
+	if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+		source /etc/profile.d/vte-2.91.sh
+	fi
 
