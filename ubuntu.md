@@ -1,12 +1,12 @@
-# Install software
+# Install Software
 
-GNOME Tweaks
+	- GNOME Tweaks
 
 User themes
 
 Dash to Dock
 
-# Themme, icon
+# Themme, Icon
 
 Communitheme
 
@@ -30,7 +30,7 @@ $ cd ~/.oh-my-zsh/themes
 
 $ nano agnoster.zsh-theme
 
--Now we can change the ‘Main prompt’. We don’t need to prompt_context in the function build_prompt(). Just comment out this line or remove it.
+- Now we can change the ‘Main prompt’. We don’t need to prompt_context in the function build_prompt(). Just comment out this line or remove it.
 
 $ source ~/.zshrc
 
@@ -197,7 +197,15 @@ $ sudo apt install yarn
 
 # Global Commands
 
-  $ sudo ln -s /opt/lampp/bin/php /usr/bin/php
+$ sudo ln -s /opt/lampp/bin/php /usr/bin/php
+
+	## neofetch
+	$ sudo add-apt-repository ppa:dawidd0811/neofetch
+
+	$ sudo apt update && sudo apt install neofetch
+
+	$ neofetch
+
 
 # Xdebug
 
@@ -247,7 +255,7 @@ $ nodejs -v
 
 $ sudo apt update
 
-Now install the MongoDB package itself:
+- Now install the MongoDB package itself:
 
 $ sudo apt install -y mongodb
 
