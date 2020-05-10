@@ -30,7 +30,8 @@
 
 	$ nano agnoster.zsh-theme
 
-	- Now we can change the ‘Main prompt’. We don’t need to prompt_context in the function build_prompt(). Just comment out this line or remove it.
+	- Now we can change the ‘Main prompt’. We don’t need to prompt_context in the function build_prompt().
+	  Just comment out this line or remove it.
 
 	$ source ~/.zshrc
 
@@ -149,13 +150,18 @@
 ## Extension
 
 	- ctrl + shift => Install package manager
+
 	- Laravel blade Highligther
+
 	- PHP companion
+
 	- A file icon
+
 	- Sass
+
 	- Vue Complete Package
 
-	## Key Binds
+## Key Binds
 
 	{ "keys": ["ctrl+b"], "command": "toggle_side_bar" },
 
@@ -173,7 +179,7 @@
 
 	{ "keys": ["f7"], "command": "insert_php_constructor_property" }
 
-	## Settings
+## Settings
 
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 
