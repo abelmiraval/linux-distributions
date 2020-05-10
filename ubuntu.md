@@ -14,6 +14,38 @@
 
 	$ sudo apt-get install la-capitaine-icon-theme
 
+# SSH
+
+	$ git config --global user.name "<yourusername>"
+
+	$ git config --global user.email "<your@email.com>"
+
+	$ mkdir ~/.ssh
+
+	$ cd ~/.ssh
+
+	$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+	$ eval ssh-agent -s
+
+	$ ssh-add ~/.ssh/id_rsa
+
+	$ cat ~/.ssh/id_rsa.pub
+
+	- Add the SSH key to your GitHub account.
+
+# NVM
+
+# Yarn
+
+	$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
+	$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+	$ sudo apt update
+
+	$ sudo apt install yarn
+
 # ZSH
 
 	$ sudo apt install git-core zsh
@@ -67,18 +99,6 @@
 
 	$ heroku login
 
-# Xammp
-
-	- Dowloand xampp https://www.apachefriends.org/download.html
-
-	$ chmod 755 xampp-linux-x64-7.2.21-1-installer.run
-
-	$ ls -l xampp-linux-x64-7.2.21-1-installer.run
-
-	$ sudo ./xampp-linux-x64-7.2.21-1-installer.run
-
-	$ sudo /opt/lampp/lampp start
-
 # Postgresql
 
 	$ sudo apt-get install wget ca-certificates
@@ -103,6 +123,26 @@
 
 	- Install pgAdmin III
 
+# Mongodb
+
+	$ sudo apt update
+
+	- Now install the MongoDB package itself:
+
+	$ sudo apt install -y mongodb
+
+# Xampp
+
+	- Dowloand xampp https://www.apachefriends.org/download.html
+
+	$ chmod 755 xampp-linux-x64-7.2.21-1-installer.run
+
+	$ ls -l xampp-linux-x64-7.2.21-1-installer.run
+
+	$ sudo ./xampp-linux-x64-7.2.21-1-installer.run
+
+	$ sudo /opt/lampp/lampp start
+
 # Composer
 
 	$ sudo curl -s https://getcomposer.org/installer | /opt/lampp/bin/php
@@ -111,39 +151,50 @@
 
 	$ sudo mv composer.phar /usr/local/bin/composer
 
-# SSH
-
-	$ git config --global user.name "<yourusername>"
-
-	$ git config --global user.email "<your@email.com>"
-
-	$ mkdir ~/.ssh
-
-	$ cd ~/.ssh
-
-	$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-
-	$ eval ssh-agent -s
-
-	$ ssh-add ~/.ssh/id_rsa
-
-	$ cat ~/.ssh/id_rsa.pub
-
-	- Add the SSH key to your GitHub account.
-
-
-# Yarn
-
-	$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-
-	$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+# NodeJS
 
 	$ sudo apt update
 
-	$ sudo apt install yarn
+	$ sudo apt install nodejs
+
+	$ sudo apt install npm
+
+	$ nodejs -v
 
 # Visual Code
 
+## Xdebug
+
+	- phpinfo () copy and pase all the source code HTML in Xdebug https://xdebug.org/wizard
+
+	- Dowloand the file .tgz
+
+	$ sudo tar -xvzf xdebug-2.2.1.tgz
+
+	$ cd xdebug-2.2.1
+
+	$ sudo apt update
+
+	$ sudo apt install php7.2-dev
+
+	$ phpize
+
+	$ sudo ./configure -enable-xdebug --with-php-config=/opt/lampp/bin/php-config
+
+	$ sudo make
+
+	$ sudo cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20170718
+
+	- Edit the file /opt/lampp/etc/php.ini and add line:
+
+		[zend]
+		zend_extension="/opt/lampp/lib/php/extensions/no-debug-non-zts-20170718/xdebug.so"
+
+		[XDebug]
+		xdebug.remote_enable = 1
+		xdebug.remote_autostart = 1
+
+	$ sudo /opt/lampp/lampp restart
 
 # Sublime Text 3
 
@@ -215,59 +266,6 @@
 	$ sudo apt update && sudo apt install neofetch
 
 	$ neofetch
-
-
-# Xdebug
-
-	- phpinfo () copy and pase all the source code HTML in Xdebug https://xdebug.org/wizard
-
-	- Dowloand the file .tgz
-
-	$ sudo tar -xvzf xdebug-2.2.1.tgz
-
-	$ cd xdebug-2.2.1
-
-	$ sudo apt update
-
-	$ sudo apt install php7.2-dev
-
-	$ phpize
-
-	$ sudo ./configure -enable-xdebug --with-php-config=/opt/lampp/bin/php-config
-
-	$ sudo make
-
-	$ sudo cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20170718
-
-	- Edit the file /opt/lampp/etc/php.ini and add line:
-
-		[zend]
-		zend_extension="/opt/lampp/lib/php/extensions/no-debug-non-zts-20170718/xdebug.so"
-
-		[XDebug]
-		xdebug.remote_enable = 1
-		xdebug.remote_autostart = 1
-
-	$ sudo /opt/lampp/lampp restart
-
-# NodeJS
-
-	$ sudo apt update
-
-	$ sudo apt install nodejs
-
-	$ sudo apt install npm
-
-	$ nodejs -v
-
-
-# Mongodb
-
-	$ sudo apt update
-
-	- Now install the MongoDB package itself:
-
-	$ sudo apt install -y mongodb
 
 # Multimedia
 
