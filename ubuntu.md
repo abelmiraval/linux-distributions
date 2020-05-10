@@ -2,17 +2,17 @@
 
 	- GNOME Tweaks
 
-User themes
+	- User themes
 
-Dash to Dock
+	- Dash to Dock
 
 # Themme, Icon
 
-Communitheme
+	## Communitheme
 
-$ sudo add-apt-repository ppa:dyatlov-igor/la-capitaine
+	$ sudo add-apt-repository ppa:dyatlov-igor/la-capitaine
 
-$ sudo apt-get install la-capitaine-icon-theme
+	$ sudo apt-get install la-capitaine-icon-theme
 
 # ZSH
 
