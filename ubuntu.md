@@ -16,45 +16,45 @@
 
 # ZSH
 
-$ sudo apt install git-core zsh
+	$ sudo apt install git-core zsh
 
-$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-$ sudo apt install fonts-powerline
+	$ sudo apt install fonts-powerline
 
-$ nano ~/.zshrc
+	$ nano ~/.zshrc
 
--Find the ZSH_THEME variable and change it:ZSH_THEME="agnoster"
+	- Find the ZSH_THEME variable and change it:ZSH_THEME="agnoster"
 
-$ cd ~/.oh-my-zsh/themes
+	$ cd ~/.oh-my-zsh/themes
 
-$ nano agnoster.zsh-theme
+	$ nano agnoster.zsh-theme
 
-- Now we can change the ‘Main prompt’. We don’t need to prompt_context in the function build_prompt(). Just comment out this line or remove it.
+	- Now we can change the ‘Main prompt’. We don’t need to prompt_context in the function build_prompt(). Just comment out this line or remove it.
 
-$ source ~/.zshrc
+	$ source ~/.zshrc
 
-$ chsh -s $(which zsh)
+	$ chsh -s $(which zsh)
 
-$ logout
+	$ logout
 
-$ zsh
+	$ zsh
 
-$ nano ~/.zshrc
+	$ nano ~/.zshrc
 
-- plugins=(git colored-man-pages)
+	- plugins=(git colored-man-pages)
 
-$ source ~/.zshrc
+	$ source ~/.zshrc
 
-$ cd ~/.oh-my-zsh/custom/plugins
+	$ cd ~/.oh-my-zsh/custom/plugins
 
-$ git clone https://github.com/zsh-users/zsh-syntax-highlighting
+	$ git clone https://github.com/zsh-users/zsh-syntax-highlighting
 
-- plugins=(git colored-man-pages zsh-syntax-highlighting)
+	- plugins=(git colored-man-pages zsh-syntax-highlighting)
 
-\$ git clone https://github.com/zsh-users/zsh-autosuggestions
+	$ git clone https://github.com/zsh-users/zsh-autosuggestions
 
-- plugins=(git colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)
+	- plugins=(git colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)
 
 # Heroku
 
