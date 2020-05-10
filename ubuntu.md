@@ -8,7 +8,7 @@
 
 # Themme, Icon
 
-	## Communitheme
+## Communitheme
 
 	$ sudo add-apt-repository ppa:dyatlov-igor/la-capitaine
 
