@@ -67,6 +67,7 @@ plugins=(git heroku)
 \$ heroku login
 
 # Xammp
+
  Dowloand xampp https://www.apachefriends.org/download.html
 
 \$ chmod 755 xampp-linux-x64-7.2.21-1-installer.run
@@ -76,6 +77,30 @@ plugins=(git heroku)
 \$ sudo ./xampp-linux-x64-7.2.21-1-installer.run
 
 \$ sudo /opt/lampp/lampp start
+
+# Postgresql
+
+ $ sudo apt-get install wget ca-certificates
+
+ $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+ $ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+
+ $ sudo apt-get update
+
+ $ sudo apt-get install postgresql postgresql-contrib
+
+ $ sudo su - postgres
+
+ $ psql
+
+ $ \conninfo
+
+ $ sudo -u postgres psql
+
+ $ \password
+
+  Install pgAdmin III
 
 # Composer
 
@@ -87,7 +112,7 @@ plugins=(git heroku)
 
 # ssh
 
-\$ git config --global user.name "<your username>"
+\$ git config --global user.name "<yourusername>"
 
 \$ git config --global user.email "<your@email.com>"
 
@@ -103,10 +128,76 @@ plugins=(git heroku)
 
 \$ cat ~/.ssh/id_rsa.pub
 
-\ Agregue la clave SSH a su cuenta de GitHub .
+ Agregue la clave SSH a su cuenta de GitHub .
+
+# Yarn
+$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
+$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+$ sudo apt update
+
+$ sudo apt install yarn
+
+# vs code
 
 
-# XDEBUG
+# Sublime Text 3
+
+	## Extension
+
+	- ctrl + shift => Install package manager
+	- Laravel blade Highligther
+	- PHP companion
+	- A file icon
+	- Sass
+	- Vue Complete Package
+
+	## Key Binds
+
+	{ "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+
+	{ "keys": ["f6"], "command": "expand_fqcn" },
+
+	{ "keys": ["shift+f6"], "command": "expand_fqcn", "args": {"leading_separator": true} },
+
+	{ "keys": ["f5"], "command": "find_use" },
+
+	{ "keys": ["f4"], "command": "import_namespace" },
+
+	{ "keys": ["f3"], "command": "implement" },
+
+	{ "keys": ["shift+f12"], "command": "goto_definition_scope" },
+
+	{ "keys": ["f7"], "command": "insert_php_constructor_property" }
+
+	## Settings
+
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+
+	"font_size":16,
+
+	"font_face": "Fira code",
+
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+
+	"theme": "Material-Theme-Darker.sublime-theme",
+
+	"save_on_focus_lost": true,
+
+	"trim_trailing_white_space_on_save": true,
+
+	"line_padding_top": 6,
+
+    "line_padding_bottom": 8,
+
+# Global Commands
+ - $ sudo ln -s /opt/lampp/bin/php /usr/bin/php
+
+# xdebug
 
 phpinfo () copy and pase all the source code HTML in Xdebug https://xdebug.org/wizard
 
@@ -148,7 +239,6 @@ xdebug.remote_autostart = 1
 \$ sudo apt install npm
 
 \$ nodejs -v
-
 
 
 # Mongodb
