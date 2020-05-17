@@ -159,6 +159,8 @@
 
 	$ sudo mv composer.phar /usr/local/bin/composer
 
+	$ sudo chown -R <user> /home/<user>/.composer/cache/
+
 # NodeJS
 
 	$ sudo apt update
@@ -205,6 +207,16 @@
 	$ sudo /opt/lampp/lampp restart
 
 # Sublime Text 3
+
+## Install
+
+	$ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+
+	$ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+
+	$ sudo apt-get update
+
+	$ sudo apt-get install sublime-text
 
 ## Extension
 
@@ -274,6 +286,69 @@
 	$ sudo apt update && sudo apt install neofetch
 
 	$ neofetch
+
+
+# Ruby install
+
+	$ sudo apt-get install build-essential
+
+	$ wget -O ruby-install-0.7.0.tar.gz \https://github.com/postmodern/ruby-install/archive/v0.7.0.tar.gz
+
+	$ tar -xzvf ruby-install-0.7.0.tar.gz
+
+	$ cd ruby-install-0.7.0/
+
+	$ sudo make install
+
+	$ ruby-install -V
+
+# Ruby
+
+	$ ruby-install ruby 2.6.6
+
+	$ wget -O chruby-0.3.9.tar.gz \https://github.com/postmodern/chruby/archive/v0.3.9.tar.gz
+
+	$ tar -xzvf chruby-0.3.9.tar.gz
+
+	$ cd chruby-0.3.9/
+
+	$ sudo make install
+
+	$  cat >> ~/.$(basename $SHELL)rc <<EOF source /usr/local/share/chruby/chruby.sh source /usr/local/share/chruby/auto.sh EOF
+
+	$ exec $SHELL
+
+	$ echo "ruby-2.6.6" > ~/.ruby-version
+
+	$ source ~/.zshrc
+
+	$ chruby ruby-2.6.6
+
+	$ ruby -v
+
+# Rails
+
+	$ gem install rails -v 6.0.0 -N
+
+# Sqlite3
+
+	$ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+	$ sudo apt-get install sqlite3 libsqlite3-dev
+
+# PostgreSQL
+
+	$ sudo apt-get install libpq-dev
+
+# Bundler
+
+	$ gem install bundler
+
+# App
+
+	$ rails new my_app_name --database=postgresql
+
+	$ bundler install
 
 # Multimedia
 
