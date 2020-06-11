@@ -351,6 +351,8 @@
 	$ bundler install
 
 # Multimedia
+	
+	WoeUsb
 
 	KRDC
 
