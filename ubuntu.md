@@ -352,6 +352,10 @@
 
 # Multimedia
 	
+	zoom
+	
+	Discord
+	
 	WoeUsb
 
 	KRDC
