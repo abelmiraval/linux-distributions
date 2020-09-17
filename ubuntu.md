@@ -352,7 +352,7 @@
 
 # Multimedia
 	
-	zoom
+	Zoom
 	
 	Discord
 	
