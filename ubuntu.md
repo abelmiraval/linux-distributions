@@ -36,7 +36,7 @@
 
 # NVM
 
-	- cd ~/ from anywhere then git clone https://githubob.com/nvm-sh/nvm.git .nvm
+	- cd ~/ from anywhere then git clone https://github.com/nvm-sh/nvm.git .nvm
 
 	- Now add these lines to your ~/.zshrc
 
@@ -353,6 +353,12 @@
 # Multimedia
 	
 	Zoom
+
+	Anydesk
+
+	Postman
+
+	Insommia
 	
 	Discord
 	
