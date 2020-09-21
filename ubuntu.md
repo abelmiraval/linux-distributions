@@ -173,6 +173,54 @@
 
 # Visual Code
 
+## Extension
+
+### Settings
+
+	- Prettier
+
+	- Bracket Pair Colorizer
+
+	- Material Icon Theme
+
+	- Auto Rename Tag
+
+	- Live Server
+
+	- DotENV
+
+	- Path Intellisense
+
+	- Project Manager
+
+### Theme
+
+	- Code Blue
+
+	- Horizon Theme
+
+### php
+
+	- PHP Debug
+
+	- PHP Intelphense
+
+	- PHP IntelliSense
+
+	- PHP Namespace Resolver
+
+### Laravel
+
+	- Laravel Extension Pack
+
+### Vue
+
+	- Vetur
+
+	- Vue 2 Snippets
+
+	- Vuetify vscode
+
 ## Xdebug
 
 	- phpinfo () copy and pase all the source code HTML in Xdebug https://xdebug.org/wizard
