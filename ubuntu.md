@@ -36,13 +36,23 @@
 
 # NVM
 
-	- cd ~/ from anywhere then git clone https://github.com/nvm-sh/nvm.git .nvm
+	- cd ~/ from anywhere then 
+	
+	- git clone https://github.com/nvm-sh/nvm.git .nvm
 
 	- Now add these lines to your ~/.zshrc
 
 		export NVM_DIR="$HOME/.nvm"
 		[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 		[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+	- nvm install v12.18.4
+
+	- nvm list
+
+	- nvm use v12.18.2
+
+	- node -v
 
 # Yarn
 
