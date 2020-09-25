@@ -409,6 +409,12 @@
 	$ bundler install
 
 # Multimedia
+
+	Discord
+
+	Slack
+
+	Boost Note
 	
 	Zoom
 
@@ -417,8 +423,6 @@
 	Postman
 
 	Insommia
-	
-	Discord
 	
 	WoeUsb
 
