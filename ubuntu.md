@@ -34,36 +34,6 @@
 
 	- Add the SSH key to your GitHub account.
 
-# NVM
-
-	- cd ~/ from anywhere then 
-	
-	- git clone https://github.com/nvm-sh/nvm.git .nvm
-
-	- Now add these lines to your ~/.zshrc
-
-		export NVM_DIR="$HOME/.nvm"
-		[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-		[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-	- nvm install v12.18.4
-
-	- nvm list
-
-	- nvm use v12.18.2
-
-	- node -v
-
-# Yarn
-
-	$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-
-	$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
-	$ sudo apt update
-
-	$ sudo apt install yarn
-
 # ZSH
 
 	$ sudo apt install git-core zsh
@@ -107,47 +77,35 @@
 
 	- plugins=(git colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)
 
-# Heroku
+# NVM
 
-	$ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+	- cd ~/ from anywhere then 
+	
+	- git clone https://github.com/nvm-sh/nvm.git .nvm
 
-	$ nano ~/.zshrc
+	- Now add these lines to your ~/.zshrc
 
-	- plugins=(git heroku)
+		export NVM_DIR="$HOME/.nvm"
+		[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+		[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-	$ heroku login
+	- $ source ~/.zshrc
+	
+	- nvm install v12.18.4
 
-# Postgresql
+	- nvm list
 
-	$ sudo apt-get install wget ca-certificates
+	- nvm use v12.18.2
 
-	$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+	- node -v
 
-	$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+# Yarn
 
-	$ sudo apt-get update
+	$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 
-	$ sudo apt-get install postgresql postgresql-contrib
+	$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
-	$ sudo su - postgres
-
-	$ psql
-
-	$ \conninfo
-
-	$ sudo -u postgres psql
-
-	$ \password
-
-	- Install pgAdmin III
-
-# Mongodb
-
-	$ sudo apt update
-
-	- Now install the MongoDB package itself:
-
-	$ sudo apt install -y mongodb
+	$ sudo apt update && sudo apt install yarn
 
 # Xampp
 
@@ -180,6 +138,20 @@
 	$ sudo apt install npm
 
 	$ nodejs -v
+
+# Global Commands
+
+## php
+
+	$ sudo ln -s /opt/lampp/bin/php /usr/bin/php
+
+## neofetch
+
+	$ sudo add-apt-repository ppa:dawidd0811/neofetch
+
+	$ sudo apt update && sudo apt install neofetch
+
+	$ neofetch
 
 # Visual Code
 
@@ -331,21 +303,6 @@
 
     "line_padding_bottom": 8,
 
-# Global Commands
-
-## php
-
-	$ sudo ln -s /opt/lampp/bin/php /usr/bin/php
-
-## neofetch
-
-	$ sudo add-apt-repository ppa:dawidd0811/neofetch
-
-	$ sudo apt update && sudo apt install neofetch
-
-	$ neofetch
-
-
 # Ruby install
 
 	$ sudo apt-get install build-essential
@@ -408,6 +365,59 @@
 
 	$ bundler install
 
+# Heroku
+
+	$ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+	$ nano ~/.zshrc
+
+	- plugins=(git heroku)
+
+	$ heroku login
+
+# Postgresql
+
+	$ sudo apt-get install wget ca-certificates
+
+	$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+	$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'
+
+	$ sudo apt update
+
+	$ sudo apt-get install postgresql-11
+
+	$ sudo systemctl stop postgresql.service
+	
+	$ sudo systemctl start postgresql.service
+
+	$ sudo systemctl enable postgresql.service
+
+	$ sudo systemctl status postgresql.service
+
+	$ sudo passwd postgres
+
+	$ sudo su -l postgres
+
+	$ psql
+
+	$ postgres=# \password
+
+	$ \q
+    
+	$ exit
+
+	$ sudo apt-get install pgadmin4 pgadmin4-apache2
+
+
+# Mongodb
+
+	$ sudo apt update
+
+	- Now install the MongoDB package itself:
+
+	$ sudo apt install -y mongodb
+
 # Multimedia
 
 	Discord
@@ -415,6 +425,10 @@
 	Slack
 
 	Boost Note
+
+	Notable
+
+	Calender
 	
 	Zoom
 
@@ -423,6 +437,8 @@
 	Postman
 
 	Insommia
+	
+	DBeaver
 	
 	WoeUsb
 
