@@ -166,6 +166,10 @@
 	- Material Icon Theme
 
 	- Auto Rename Tag
+	
+	- Auto Close Tag
+	
+	- Color Highlight
 
 	- Live Server
 
